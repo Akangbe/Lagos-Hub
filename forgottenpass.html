@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/lagos-state-logo 2.png"
+    />
+    <link rel="stylesheet" href="/global.css" />
+    <link rel="stylesheet" href="/mediaquery.css" />
+    <title>Forgent Password</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="section">
+        <div class="img">
+          <img src="/images/lagos-state-logo 2.png" alt="" />
+        </div>
+        <h1>LAGOS STATE INTEGRATION HUB</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. arc pranm
+          Ullamcorper egestas ornare ac, commodo vitae tortor pharetra.
+        </p>
+      </div>
+      <div class="l-form">
+        <form
+          action="/index.html"
+          class="form"
+          name="myForm"
+          method="get"
+          
+      
+          onsubmit="return validated()"
+        >
+          <h3 class="forgetpw-title">Request to reset password</h3>
+          <p class="form__subtitleLog">
+            Kindly send us a request and we’ll get back to you
+          </p>
+          <div class="form__main">
+            <div class="form__container">
+              <!-- FORM 1 -->
+              <div class="form__div">
+                <input
+                  type="text"
+                  name="name"
+                  class="form__input"
+                  placeholder=" "
+                  onkeydown="return /[a-z]/i.test(event.key)"
+                />
+
+                <label for="" class="form__label">Full name</label>
+              </div>
+              <div id="name_error">A valid Name is required</div>
+              <input type="submit" class="form__button" value="Send Request" />
+            </div>
+          </div>
+          <p class="form__sign">
+            Not sure of your email?<a href="#"> Contact us</a>
+          </p>
+        </form>
+      </div>
+    </div>
+    <script src="/global.js"></script>
+  </body>
+</html>

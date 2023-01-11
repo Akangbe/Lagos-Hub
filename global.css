@@ -1,0 +1,211 @@
+:root {
+  --firstcolor: #45955c;
+  --input-color: #33333399;
+  --border-color: #dadce0;
+  /* FONT */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: #f5f5f5;
+}
+
+/* confirmation css */
+.confirmation {
+  width: 482px;
+}
+
+.confirmation h1 {
+  font-size: 30px;
+  line-height: 41px;
+  margin-bottom: 5px;
+}
+
+.confirmation p {
+  /* width: 482px;
+  height: 99px; */
+  font-size: 24px;
+  line-height: 33px;
+  color: #333333;
+  opacity: 0.25;
+  text-align: center;
+}
+
+.confirmation a {
+  margin-top: 52px;
+  font-size: 22px;
+  line-height: 30px;
+  color: var(--firstcolor);
+}
+
+.section {
+  width: 45%;
+  margin-top: 40px;
+  margin-right: 50px;
+}
+
+.section img {
+  width: 239px;
+  height: 236px;
+}
+
+.section h1 {
+  color: var(--firstcolor);
+  margin-top: 60px;
+  font-size: 27px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.section p {
+  color: #555555;
+  font-size: 1rem;
+  line-height: 22px;
+  text-align: center;
+}
+
+/* .form__main {
+  border: 2px solid #eee;
+} */
+
+.form__container {
+  width: 360px;
+  padding: 3rem 3.2rem;
+  border-radius: 1rem;
+}
+
+.form__title {
+  font-weight: 300;
+  margin-bottom: 2rem;
+  color: var(--firstcolor);
+  font-size: 36px;
+}
+
+.forgetpw-title {
+  font-size: 28px;
+  color: var(--firstcolor);
+}
+
+.form__subtitleLog {
+  font: 1rem;
+  margin-top: 5px;
+  color: rgba(85, 85, 85, 0.5);
+}
+
+.form__div {
+  position: relative;
+  height: 48px;
+  margin-bottom: 1rem;
+}
+
+.form__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* width: 100%; */
+  font-size: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  outline: none;
+  padding: 1rem;
+  background: none;
+  z-index: 1;
+  width: 320px;
+}
+
+.form__label {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  padding: 0.25rem;
+  background-color: #f9f9f9;
+  color: var(--input-color);
+  font-size: 13px;
+  /* transition: 0.4s; */
+  cursor: text;
+  transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+}
+
+.form__button {
+  display: block;
+  padding: 0.75rem 2rem;
+  outline: none;
+  background-color: var(--firstcolor);
+  color: #e8eefc;
+  font-size: 20px;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+  border: none;
+  width: 360px;
+}
+
+.form__sign {
+  margin-top: 30px;
+  color: rgba(85, 85, 85, 0.5);
+}
+
+.form__sign a {
+  color: var(--firstcolor);
+}
+
+.forget__password {
+  color: var(--firstcolor);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.forget__password a {
+  color: var(--firstcolor);
+}
+
+.form__button:hover {
+  box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
+}
+
+.form__input:focus + .form__label {
+  top: -0.5rem;
+  left: 0.8rem;
+  font-size: 12px;
+  color: var(--firstcolor);
+  font-weight: 500;
+  z-index: 10;
+}
+
+.form__input:not(:placeholder-shown).form__input:not(:focus) + .form__label {
+  top: -0.5rem;
+  left: 0.8rem;
+  font-size: 12px;
+  font-weight: 500;
+  z-index: 10;
+}
+
+.form__input:focus {
+  border: 1.5px solid var(--firstcolor);
+}
+/* error messages for validation */
+#name_error,
+#email_error,
+#pass_error{
+  color: rgb(235, 34, 34);
+  font-size: 13px;
+ font-style: italic;
+
+  position: relative;
+  top: -10px;
+  bottom: 0;
+  text-align: end;
+  right: 0;
+  display: none;
+}

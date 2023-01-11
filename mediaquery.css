@@ -1,0 +1,90 @@
+@media screen and (max-width: 480px) {
+    * {
+        /* overflow-x: hidden; */
+
+    }
+
+    body {
+        font-size: 1rem;
+    }
+
+    .container {
+        display: block;
+        padding: 20px;
+    }
+   
+
+    .container .img {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .container img {
+        height: 70px;
+        width: 70px;
+        margin: 10px 10px;
+    }
+
+    .section {
+        width: 100%;
+    }
+
+    .section h1 {
+        font-size: 20px;
+    }
+    .section p{
+       
+    }
+    form{
+        margin-top: 30px;
+    }
+.form__main{
+    padding: 10px;
+    background-color: #f5f5f5;
+}
+    .l__form {
+        margin-top: 30px;
+    }
+    .form__label{
+        background-color:#f5f5f5; 
+    }
+    .form__container{
+        width: 100%;
+        padding: 10px 5px;
+        margin: 2px;
+        /* background-color: yellow; */
+    }
+    .form__input{
+        width: 75vw;
+        padding-left:8px ;
+       
+    }
+    .form__button{
+        width: 100%;
+      
+    }
+    .forgetpw-title{
+        font-size: 20px;
+    }
+    .confirmation{
+        width: 100%;
+        margin-top: 40px;
+    }
+    .confirmation h1{
+        line-height: 30px;
+        text-align: center;
+        font-size: 20px;
+    }
+    .confirmation p{
+        font-size: 1.2rem;
+        line-height: 20px;
+        margin: 20px 0 35px 0;
+    }
+    .userContainer1{
+        background: none
+        ;
+    }
+}

@@ -1,0 +1,254 @@
+.userContainer1 {
+  padding: 40px 40px 0 40px;
+}
+.useContainerSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* .mainUser{
+  overflow-x: scroll;
+} */
+
+.header1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header1 h3 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  margin-bottom: 67px;
+}
+.stroll {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.stroll p {
+  text-transform: capitalize;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+.strollimg {
+  /* display: inline-block; */
+  height: 2px;
+  width: 2px;
+  margin-top: -60px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.strollimg1 {
+  margin-bottom: -14px;
+}
+.adminRequset {
+  width: 50%;
+}
+.adminRequset h4 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 33px;
+}
+.adminRequset b {
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 76px;
+}
+.adminRequset span {
+  width: 26.05px;
+  height: 26.05px;
+  color: #dee171;
+  margin-left: -10px;
+}
+.adminRequset p {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 15px;
+  margin-bottom: 70px;
+}
+.pendingheader {
+  margin: 20px 10px;
+}
+#form .radio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*  */
+.container {
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+}
+.RadioStatus {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+  font-size: 16px;
+}
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 26px;
+  width: 28px;
+  background-color: #eee;
+  border-radius: 10px;
+}
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #45955c;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.chart {
+}
+.number {
+  color: #000000;
+  margin: 0;
+  width: 50px;
+  height: 100%;
+  float: left;
+}
+.number li {
+  position: relative;
+  margin-bottom: 40px;
+}
+.number span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+.bars {
+  display: inline-block;
+  width: 470px;
+  height: 253px;
+
+  /* background:tomato ; */
+  /* border: 3px solid rgba(0, 0, 0, 0.2); */
+}
+canvas
+{
+  width: 50%; max-width: 50% ; height:255px ;
+  margin-left: 20px;
+}
+
+.chart-container{
+ 
+}
+/* .line {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 59px 40px -31px 40px;
+} */
+th {
+  background-color: #f4f7fa;
+}
+.table h2 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 33px;
+  margin-bottom: 33px;
+  font-weight: 500;
+}
+.deleteimg img{
+  cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+  .userContainer1 {
+    padding: 2px;
+  }
+  .header1 h3 {
+    margin-bottom: 35px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .header1 h3 {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .adminRequset h4 {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+  .adminRequset b {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .adminRequset p {
+    font-size: 12px;
+    line-height: 1.2;
+    margin-top: 27px;
+    margin-bottom: 51px;
+  }
+  .useContainerSection {
+    display: block;
+  }
+  .adminRequset span {
+    margin-left: 0px;
+  }
+  .adminRequset {
+    width: 100%;
+    text-align: center;
+  }
+  #form .radio {
+    display: inline-block;
+  }
+  .radioNumber {
+    padding-left: 2px;
+  }
+  .userContainer {
+    background-color: #f5f5f5;
+  }
+  /* CHART  */
+  canvas
+  {
+     max-width: 100vw; 
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    /* max-height: 22vh; */
+
+  }
+  .chart-container{
+    max-height:22vh ;
+  }
+
+
+}

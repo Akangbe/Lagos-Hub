@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Chart.css -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/charts.css/dist/charts.min.css" />
+  <!-- FONT AWESOME
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="/user.css" />
+  <link rel="stylesheet" href="./mediaAdmin.css">
+  <link rel="stylesheet" href="/dashbord.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/lagos-state-logo 2.png">
+  <title>Dashboard</title>
+</head>
+
+<body>
+  <section class="section">
+    <!-- TOP NAV -->
+    <div class="topNav">
+      <div class="topNavcontainer">
+        <div class="firstimg">
+          <img src="/images/lagos-state-logo 2.png" alt="lagos-state-logo" />
+        </div>
+        <h1>LAGOS STATE INTEGRATION HUB</h1>
+        <div class="topNavAdnin">
+          <div class="secondimg">
+            <img src="/images/person.jpg" alt="" />
+          </div>
+          <h2>ADMIN</h2>
+          <div class="thirdimg">
+            <img src="/images/user.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- TOP NAV END -->
+    <!-- Mobile Sidebar -->
+    <div class="hamberger">
+      <div class="menu-btn">
+        <div class="menu-btn__burger">
+        </div>
+        <div class="mobile-Nav">
+          <div class="mobile-menu">
+            <nav class="side">
+              <ul>
+                <li>
+                  <a href="" class="side-container">
+                    <img class="side-icon" src="/images/Dashbord.png" alt="Dashboard" />
+                    Dashboard
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="side-container active">
+                    <img class="side-icon" src="/images/user.png" alt="user" />
+                    User
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="side-container">
+                    <img class="side-icon" src="/images/application.png" alt="application" />
+                    Application
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="side-container">
+                    <img class="side-icon" src="/images/file.png" alt="file" />
+                    Report
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="side-container">
+                    <img class="side-icon" src="/images/setting.png" alt="Dashboard" />
+                    Account
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="side-container">
+                    <img class="side-icon" src="/images/logout.png" alt="logout" />
+                    Logout
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- TOP NAV END -->
+
+    <div class="main">
+      <div class="sideNav">
+        <!-- MENU HAMBERGER FOR MOBILE VIEW-->
+
+        <!-- SIDEBAR FOR DESKTOP SCREEN -->
+        <div class="desktop-menu" style="width:20vw ;">
+          <nav class="side">
+            <ul>
+              <li>
+                <a href="" class="side-container">
+                  <img class="side-icon" src="/images/Dashbord.png" alt="Dashboard" />
+                  Dashboard
+                </a>
+              </li>
+            <li>
+                <a href="" class="side-container active">
+                  <img class="side-icon" src="/images/user.png" alt="user" />
+                  User
+                </a>
+              </li>
+              <li>
+                <a href="" class="side-container">
+                  <img class="side-icon" src="/images/application.png" alt="application" />
+                  Application
+                </a>
+              </li>
+              <li>
+                <a href="" class="side-container">
+                  <img class="side-icon" src="/images/file.png" alt="file" />
+                  Report
+                </a>
+              </li>
+              <li>
+                <a href="" class="side-container">
+                  <img class="side-icon" src="/images/setting.png" alt="Dashboard" />
+                  Account
+                </a>
+              </li>
+              <li>
+                <a href="/login.html" class="side-container">
+                  <img class="side-icon" src="/images/logout.png" alt="logout" />
+                  Logout
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+        <!-- SIDEBAR END -->
+        <!-- MAIN USER -->
+        <div class="mainUser">
+          <!-- MAIN TOP -->
+          <div class="userContainer1">
+            <!-- HEADER -->
+            <div class="header1">
+              <h3>Hello, Admin</h3>
+              <div class="stroll">
+                <p>Past 30 Days</p>
+                <div class="strollimg">
+                  <img src="/images/down.png" class="strollimg1" alt="">
+                  <img src="/images/up.png" class="strollimg2" alt="" style="padding-top: -7px;">
+                </div>
+              </div>
+
+            </div>
+            <!-- USERCONTAINER LEFT AND RIGHT SECTION  (BARCHART) -->
+            <div class="useContainerSection">
+              <!-- SECTION LEFT FOR ADMIN -->
+              <div class="adminRequset">
+                <h4>Request</h4>
+                <b>127 <span>&#8599;</span></b>
+                <p>From May 22, 2022 to May 24, 2022</p>
+                <!-- RADIO BTN -->
+                <div id="form">
+                  <div class="radio">
+                    <label class="container">
+                      <input type="radio" checked="checked" name="radio" /> 100
+                      <span class="checkmark"></span>
+                      <br />
+                      <div class="RadioStatus">Successfully completed</div>
+                    </label>
+                    <label class="container">13
+                      <input type="radio" name="radio" />
+                      <span class="checkmark"></span>
+                      <br />
+                      <div class="RadioStatus">Failed request</div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <!-- SECTION RIGHT -->
+              <!-- <div class="chart-container" 
+              style="position: relative; height:40vh; width:80vw"> -->
+                <canvas id="myChart"></canvas>
+            <!-- </div> -->
+
+              <!-- <canvas id="myChart"
+             
+              >
+            </canvas> -->
+              <!-- <canvas id="myChart" class="mychart2"
+              style="width: 50%; max-width: 50% ; height:255px ;">
+            </canvas> -->
+              <!-- <div><canvas id="myChart" width="600" height="400"></canvas></div> -->
+
+            </div>
+          </div>
+          <div class="userContainer">
+            <!-- <div class="line"> </div> -->
+            <!-- TABLES -->
+            <div style="overflow-x:auto;">
+              <h2 class="pendingheader">Pending request</h2>
+              <table>
+                <tr>
+                  <th>First name</th>
+                  <th>Last name</th>
+                  <th>Date</th>
+                  <th>Link</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+
+                <tr>
+                <tr>
+                  <td>Ade </td>
+                  <td>Ade </td>
+                  <td>09/02/22</td>
+                  <td>View</td>
+                  <td>
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider round"></span>
+                    </label>
+                  </td>
+
+                  <td>
+                    <div class="deleteimg">
+                      <img src="/images/delete.png" alt="">
+                    </div>
+
+                  </td>
+                </tr>
+
+                </tr>
+                <tr>
+                  <td>Ade </td>
+                  <td>Ade </td>
+                  <td>09/02/22</td>
+                  <td>View</td>
+                  <td>
+                    <label class="switch">
+                      <input type="checkbox" checked>
+                      <span class="slider round"></span>
+                    </label>
+                  </td>
+
+                  <td>
+                    <div class="deleteimg">
+                      <img src="/images/delete.png" alt="">
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <script src="/user.js"></script>
+</body>
+</html>

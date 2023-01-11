@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/lagos-state-logo 2.png"
+    />
+    <link rel="stylesheet" href="/global.css" />
+    <link rel="stylesheet" href="/mediaquery.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="section">
+        <div class="img">
+          <img src="/images/lagos-state-logo 2.png" alt="" />
+        </div>
+        <h1>LAGOS STATE INTEGRATION HUB</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. arc pranm
+          Ullamcorper egestas ornare ac, commodo vitae tortor pharetra.
+        </p>
+      </div>
+      <div class="l__form">
+        <form
+          class="form"
+
+          action="/dashbord.html"
+          name="myForm"
+          onsubmit="return validated()"
+        >
+          <h1 class="form__title">Welcome back!</h1>
+          <p class="form__subtitleLog">Sign in to continue</p>
+          <div class="form__main">
+            <div class="form__container">
+              <div class="form__div">
+                <!-- <input
+                  type="text"
+                  name="name"
+                  class="form__input"
+                  placeholder=" "
+                  onkeydown="return /[a-z]/i.test(event.key)"
+                  style="display: none;"
+                />
+                <label     style="display: none;" for="" class="form__label">Full name</label>
+              </div>
+              <div id="name_error">A valid Name is required</div>
+              -->
+              <!-- FORM 1 FOR EMAIL -->
+              <div class="form__div">
+                <input
+                  type="email"
+                  name="email"
+                  class="form__input"
+                  placeholder=" "
+                />
+                <label for="" class="form__label">Email</label>
+              </div>
+              <div id="email_error">A valid Email is required</div>
+               <!-- FORM 2 FOR PASSWORD -->
+               <div class="form__div">
+                <input
+                  type="password"
+                  name="password"
+                  class="form__input"
+                  placeholder=" "
+                  required
+                />
+                <label for="" class="form__label" >Password</label>
+              </div>
+              <div id="pass_error">Enter Valid Password</div>
+         
+              <div class="forget__password">
+                <a href="/forgottenpass.html" class="">Forgot password?</a>
+              </div>
+              <input type="submit" class="form__button" required value="sign in" />
+              <p class="form__sign">
+                Don't have an account? <a href="/sign-up.html">Sign up</a>
+              </p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="/global.js"></script>
+  </body>
+</html>
+
+
